@@ -27,6 +27,9 @@ use std::{
 use system_properties_bindgen::prop_info as PropInfo;
 use thiserror::Error;
 
+#[doc(hidden)]
+pub mod parsers_formatters;
+
 /// Errors this crate can generate
 #[derive(Error, Debug)]
 pub enum PropertyWatcherError {
