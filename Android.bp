@@ -1,4 +1,5 @@
 package {
+    default_team: "trendy_team_android_rust",
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
@@ -109,12 +110,18 @@ rust_bindgen {
     source_stem: "bindings",
     header_libs: ["libcutils_headers"],
     bindgen_flags: [
-        "--allowlist-function", "android_get_control_socket",
-        "--allowlist-var", "AID_KEYSTORE",
-        "--allowlist-var", "AID_ROOT",
-        "--allowlist-var", "AID_SHELL",
-        "--allowlist-var", "AID_SYSTEM",
-        "--allowlist-var", "AID_USER_OFFSET",
+        "--allowlist-function",
+        "android_get_control_socket",
+        "--allowlist-var",
+        "AID_KEYSTORE",
+        "--allowlist-var",
+        "AID_ROOT",
+        "--allowlist-var",
+        "AID_SHELL",
+        "--allowlist-var",
+        "AID_SYSTEM",
+        "--allowlist-var",
+        "AID_USER_OFFSET",
     ],
     product_available: true,
     vendor_available: true,
